@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/normalize.css">
     </head>
@@ -22,7 +23,7 @@
                         <img src="img/user.svg" alt="user" class="button-icon">
                         <span class="button-text">Увійти</span>
                     </button>
-                    <button class="button">
+                    <button class="button" id="cart-button">
                         <img src="img/shopping-cart.svg" alt="user" class="button-icon">
                         <span class="button-text"> Кошик</span>
                     </button>
@@ -54,7 +55,7 @@
                         </div>
                     </div>
                     <div class="cards">
-                        <div class="card">
+                        <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
                             <img src="img/roll1.png" alt="card" class="card-image" />
                             <div class="card-text">
                                 <div class="card-heading">
@@ -77,7 +78,7 @@
                         </div>
                         <!-- /.card -->
                 
-                        <div class="card">
+                        <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
                             <img src="img/roll2.png" alt="card" class="card-image" />
                             <div class="card-text">
                                 <div class="card-heading">
@@ -100,7 +101,7 @@
                         </div>
                         <!-- /.card -->
                 
-                        <div class="card">
+                        <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
                             <img src="img/roll3.png" alt="card" class="card-image" />
                             <div class="card-text">
                                 <div class="card-heading">
@@ -123,7 +124,7 @@
                         </div>
                         <!-- /.card -->
                 
-                        <div class="card">
+                        <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
                             <img src="img/roll4.png" alt="card" class="card-image" />
                             <div class="card-text">
                                 <div class="card-heading">
@@ -146,7 +147,7 @@
                         </div>
                         <!-- /.card -->
                 
-                        <div class="card">
+                        <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
                             <img src="img/roll5.png" alt="card" class="card-image" />
                             <div class="card-text">
                                 <div class="card-heading">
@@ -169,7 +170,7 @@
                         </div>
                         <!-- /.card -->
                 
-                        <div class="card">
+                        <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
                             <img src="img/roll6.png" alt="card" class="card-image" />
                             <div class="card-text">
                                 <div class="card-heading">
@@ -216,6 +217,82 @@
                     <!-- /.footer-block -->
                 </div>
             </footer>
+
+            <div class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Кошик</h3>
+                        <button class="close">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="food-row">
+                            <span class="food-name">Ролл вугор стандарт</span>
+                            <strong class="food-price">100</strong>
+                            <div class="food-counter">
+                                <button class="counter-button">-</button>
+                                <span class="counter">1</span>
+                                <button class="counter-button">+</button>
+                            </div>
+                        </div>
+                        <!-- /.foods-row -->
+                        <div class="food-row">
+                            <span class="food-name">Каліфорнія стандарт</span>
+                            <strong class="food-price">100</strong>
+                            <div class="food-counter">
+                                <button class="counter-button">-</button>
+                                <span class="counter">1</span>
+                                <button class="counter-button">+</button>
+                            </div>
+                        </div>
+                        <!-- /.foods-row -->
+                        <div class="food-row">
+                            <span class="food-name">Окінава стандарт</span>
+                            <strong class="food-price">100</strong>
+                            <div class="food-counter">
+                                <button class="counter-button">-</button>
+                                <span class="counter">1</span>
+                                <button class="counter-button">+</button>
+                            </div>
+                        </div>
+                        <!-- /.foods-row -->
+                        <div class="food-row">
+                            <span class="food-name">Цезарь мак хl</span>
+                            <strong class="food-price">100</strong>
+                            <div class="food-counter">
+                                <button class="counter-button">-</button>
+                                <span class="counter">1</span>
+                                <button class="counter-button">+</button>
+                            </div>
+                        </div>
+                        <!-- /.foods-row -->
+                        <div class="food-row">
+                            <span class="food-name">Ясай мак стандарт</span>
+                            <strong class="food-price">100</strong>
+                            <div class="food-counter">
+                                <button class="counter-button">-</button>
+                                <span class="counter">1</span>
+                                <button class="counter-button">+</button>
+                            </div>
+                        </div>
+                        <!-- /.foods-row -->
+                        
+                    </div>
+                    <!-- /.modal-body -->
+                    <div class="modal-footer">
+                        <span class="modal-pricetag">500</span>
+                        <div class="footer-buttons">
+                            <button class="button button-primary">Оформити заказ</button>
+                            <button class="button">Відмінити</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-footer -->
+
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+
         </main>
+        <script src="js/wow.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
