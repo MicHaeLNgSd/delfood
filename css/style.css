@@ -109,6 +109,18 @@ body {
   padding: 68px 70px;
   margin-bottom: 56px;
 }
+.pizza {
+  background: #fde174 url(../img/promo/pizza.png) no-repeat right 20px / 550px;
+}
+.kebab {
+  background: #85d0fc url(../img/promo/kebab.png) no-repeat right 20px / 550px;
+}
+.vegetables {
+  background: #7dfc99 url(../img/promo/vegetables.png) no-repeat right 0 / 850px;
+}
+.sushi {
+  background: #fd78fd url(../img/promo/sushi.png) no-repeat right 20px / 550px;
+}
 .promo-title {
   font-style: normal;
   font-weight: 700;
@@ -417,6 +429,9 @@ body {
 }
 .hide * {
   display: none;
+}
+.swiper{
+  z-index: 0;
 }
 @media (max-width: 1366px) {
   .container {
