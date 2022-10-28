@@ -224,6 +224,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
+  display: flex;
 }
 .price,
 .category {
@@ -448,11 +449,6 @@ body {
   .price {
     font-size: 14px;
   }
-    .card-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
 }
 @media (max-width: 992px) {
   .container {
