@@ -15,6 +15,9 @@ body {
   justify-content: space-between;
   margin-bottom: 40px;
 }
+.swiper {
+  z-index: 0;
+}
 .input {
   background: #ffffff;
   border: 1px solid #d9d9d9;
@@ -442,13 +445,14 @@ body {
 .swiper {
   z-index: 0;
 }
+
 @media (max-width: 1366px) {
   .container {
     max-width: 960px;
   }
   .promo {
-        background-position: top 50px right -50px;
-        background-size: 450px;
+    background-position: right 50px;
+    background-size: 375px;
   }
   .card .rating {
     margin-right: 15px;
@@ -464,8 +468,8 @@ body {
   }
   .promo {
     padding: 50px;
-        background-position: top 50px right -60px;
-        background-size: 369px;
+    background-position: top 300px;
+    background-size: 300px;
   }
   .promo-text {
     font-size: 18px;
@@ -492,8 +496,8 @@ body {
     font-size: 18px;
   }
   .promo {
-        /* background: #fff1b8 url(../img/pngegg2.png) no-repeat top -3px right -182px / 346px; */
-        background-position: top 40px right -150px;
+    background: #fff1b8 url(../img/pngegg2.png) no-repeat right 20px / 550px;
+    background-position: top -3px right -182px;
     background-size: 346px;
   }
   .promo-title {
